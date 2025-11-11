@@ -1,5 +1,6 @@
 import streamlit as st
 from openai import OpenAI
+import json
 
 st.set_page_config(
     page_title="AI Recipe Suggestion Bot",
@@ -7,8 +8,8 @@ st.set_page_config(
     layout="wide"
 )
 
-# Your OpenAI API key directly set here
-OPENAI_API_KEY =
+# Add your OpenAI API key here
+OPENAI_API_KEY = "your_openai_api_key_here"
 
 if not OPENAI_API_KEY:
     st.error("⚠️ OPENAI_API_KEY not found! Please add your API key in the code.")
@@ -107,7 +108,6 @@ if generate_button:
         st.warning("⚠️ Please enter at least one ingredient to get recipe suggestions!")
     else:
         with st.spinner("🧑‍🍳 AI Chef is creating your perfect recipe..."):
-            import json
             try:
                 recipe_json = generate_recipe(ingredients, dietary_preferences, cuisine, cooking_time, servings)
                 recipe = json.loads(recipe_json)
