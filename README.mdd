@@ -1,0 +1,21 @@
+# 🍳 AI Recipe Suggestion Bot
+
+An intelligent recipe suggestion bot powered by OpenAI's GPT-5 that generates personalized recipes based on your available ingredients, dietary preferences, and cuisine choices. Perfect for college projects and GitHub portfolios!
+
+## ✨ Features
+
+- **🥗 Ingredient-Based Search**: Enter ingredients you have on hand and get recipe suggestions
+- **🥑 Dietary Preferences**: Support for multiple dietary restrictions: Vegetarian, Vegan, Gluten-Free, Dairy-Free, Keto, Low-Carb, High-Protein, Paleo, Nut-Free, Halal, Kosher
+- **🌍 Cuisine Selection**: Choose from 14+ cuisine types including Italian, Indian, Mexican, Chinese, Japanese, Thai, American, French, Mediterranean, Korean, Spanish, Middle Eastern, Greek, and more
+- **⏱️ Time Control**: Set maximum cooking time (15-180 minutes)
+- **👥 Servings Adjustment**: Specify number of servings (1-12)
+- **📋 Detailed Recipe Output**: Full ingredient list, step-by-step instructions, cooking time, difficulty, nutritional info, chef tips
+- **🔄 Recipe Regeneration**: Generate alternative recipes anytime
+- **🎨 Beautiful UI**: Clean modern interface built with Streamlit
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Python 3.11 or higher
+- OpenAI API key ([Get one here](https://platform.openai.com/api-keys))
